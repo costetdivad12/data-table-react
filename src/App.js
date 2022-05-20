@@ -1,11 +1,15 @@
 
 import './App.css';
 import DataTable from './table/DataTable';
+import DataTableAxios from './table/DataTableAxios';
+import DataTableJson from './table/DataTableJson';
 
 function App() {
   return (
     <div className="App">
-     <DataTable/>
+     <DataTableJson/>
+     <DataTable />
+     <DataTableAxios/>
     </div>
   );
 }
