@@ -8,8 +8,8 @@ const DataTableAxios = () => {
   //mostrar datos con axios
   const data = "https://gorest.co.in/public/v2/users";
 
-  const getData = async () => {
-    await axios.get(data).then((resp) => {
+  const getData =  () => {
+     axios.get(data).then((resp) => {
     //   console.log(resp.data);
       const datas =resp.data;
       setProductos(datas);
@@ -49,7 +49,7 @@ const DataTableAxios = () => {
   // renderizamos la data
 
   return (
-  <div>
+  <div className="encabezado">
       <MUIDataTable 
       title={"LISTA DE USUARIOS AXIOS"}
       data={ Productos}
